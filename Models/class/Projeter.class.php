@@ -1,34 +1,32 @@
 <?php 
 
-    class Valider{
+    class Projeter{
 
         private $idClt;
-        private $idExp;
+        private $idPro;
         private $DDact;
         private $DFact;
         private $cotev;
         private $comClt;
-        private $descrprojet;
-        private $comExp;
+        private $descrProj;
 
-        public function __construct($idClt,$idExp,$DDact,$DFact,$cotev,$comClt,$descrprojet,$comExp){
+        public function __construct($idClt,$idPro,$DDact,$DFact,$cotev,$comClt,$descrProj){
 
             $this->idClt = $idClt;
-            $this->idExp = $idExp;
+            $this->idPro = $idPro;
             $this->DDact = $DDact;
             $this->DFact = $DFact;
             $this->cotev = $cotev;
             $this->comClt = $comClt;
-            $this->descrprojet = $descrprojet;
-            $this->comExp = $comExp;
+            $this->descrProj = $descrProj;
             
         }
 
         public function getidclt(){ return $this->idClt;}
         public function setidclt($idclt){ $this->idClt = $idclt;}
 
-        public function getidExp(){ return $this->idExp;}
-        public function setiExp($idexp){ $this->idExp = $idexp;}
+        public function getidPro(){ return $this->idPro;}
+        public function setiExp($idPro){ $this->idPro = $idPro;}
 
         public function getddact(){ return $this->DDact;}
         public function setddact($ddact){ $this->DDact = $ddact;}
@@ -42,10 +40,8 @@
         public function getcomC(){ return $this->comClt;}
         public function setcomC($comClt){ $this->comClt = $comClt;}
 
-        public function getdescr(){ return $this->descrprojet;}
-        public function setdescr($descrp){ $this->descrprojet = $descrp;}
+        public function getdescr(){ return $this->descrProj;}
+        public function setdescr($descrp){ $this->descrProj = $descrp;}
 
-        public function getcomE(){ return $this->comExp;}
-        public function setcomE($comE){ $this->comExp = $comE;}
         
     }

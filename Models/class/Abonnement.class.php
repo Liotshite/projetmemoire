@@ -1,32 +1,32 @@
 <?php 
 
-    class abonnement{
+    class Abonnement{
 
-        private $id;
-        private $nom;
+        private $idAbn;
+        private $NbrM;
         private $tarif;
-        private $descrip;
+        private $descrAbn;
         private $valid;
 
-        public function __construct($id,$nom,$tarif,$descrip){
+        public function __construct($id,$NbrM,$tarif,$descrip){
             
-            $this->id = $id;
-            $this->nom = $nom;
+            $this->idAbn = $id;
+            $this->NbrM = $NbrM;
             $this->tarif = $tarif;
-            $this->descrip = $descrip;
+            $this->descrAbn = $descrip;
         }
 
-        public function getid(){return $this->id;}
-        public function setid($id){ $this->id =$id;}
+        public function getid(){return $this->idAbn;}
+        public function setid($id){ $this->idAbn =$id;}
 
-        public function getnom(){return $this->nom;}
-        public function setnom($nom){ $this->nom =$nom;}
+        public function getnom(){return $this->NbrM;}
+        public function setnom($nbr){ $this->NbrM =$nbr;}
 
         public function gettarif(){return $this->tarif;}
         public function settarif($tar){ $this->tarif =$tar;}
 
-        public function getdescr(){return $this->descrip;}
-        public function setdescr($desc){ $this->descrip =$desc;}
+        public function getdescr(){return $this->descrAbn;}
+        public function setdescr($desc){ $this->descrAbn =$desc;}
 
         public function getvalid(){ return $this->valid;}
         public function setvalid($valid){ $this->valid = $valid;}

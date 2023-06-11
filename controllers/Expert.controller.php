@@ -1,6 +1,6 @@
 <?php
 
-    class ExpertController{
+    class ProController{
 
         
     }

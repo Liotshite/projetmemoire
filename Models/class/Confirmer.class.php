@@ -1,20 +1,18 @@
 <?php 
 
-    class confirmation{
+    class confirmer{
 
         private $idClt;
         private $idAbn;
         private $DDabn;
-        private $NbrM;
         private $typaie;
         private $DFabn;
 
-        public function __construct($idClt,$idAbn,$DDabn,$NbrM,$typaie,$DFabn){
+        public function __construct($idClt,$idAbn,$DDabn,$typaie,$DFabn){
 
             $this->idClt = $idClt;
             $this->idAbn = $idAbn;
             $this->DDabn = $DDabn;
-            $this->NbrM = $NbrM;
             $this->typaie = $typaie;
             $this->DFabn = $DFabn;           
             
@@ -28,9 +26,6 @@
 
         public function getddabn(){ return $this->DDabn;}
         public function setddabn($ddabn){ $this->DDabn = $ddabn;}
-
-        public function getnbrm(){ return $this->NbrM;}
-        public function setnbrm($Nbr){ $this->NbrM = $Nbr;}
 
         public function gettyp(){ return $this->typaie;}
         public function settyp($typ){ $this->typaie = $typ;}

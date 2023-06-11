@@ -151,9 +151,9 @@
       <!-- FOOTER -->
       <div class="jumbotron text-white rounded bg-primary" >
         <div class="container row d-flex justify-content-center align-items-center h-90">
-          <p style="font-size: larger;font-family: Sylfaen">Grâce à notre équipe d'experts, nous sommes en mesure de fournir à nos 
+          <p style="font-size: larger;font-family: Sylfaen">Grâce à notre équipe d'Pros, nous sommes en mesure de fournir à nos 
             clients des solutions personnalisées pour répondre à leurs besoins financiers spécifiques. 
-            Nous sommes convaincus que notre expertise et notre engagement envers nos clients nous 
+            Nous sommes convaincus que notre Proise et notre engagement envers nos clients nous 
             permettent de les aider à atteindre leurs objectifs financiers à long terme.</p>
           <p style="font-size: larger;font-family: Sylfaen">En choisissant notre entreprise, vous peuvez être assurés que vous travaillez 
             avec une entreprise compétente et dévouée qui est passionnée par la réussite financière de ses clients. 

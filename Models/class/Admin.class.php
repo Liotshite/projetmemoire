@@ -2,33 +2,33 @@
 
     class admin{
 
-        private $id;
-        private $nom;
-        private $passw;
-        private $numTel;
-        private $valid;
+        private $idAdmin;
+        private $NmAdmin;
+        private $MdpAdm;
+        private $emailAdm;
+        private $validAdm;
 
-        public function __construct($id,$nom,$passw,$numTel){
+        public function __construct($id,$nom,$MdpAdm,$emailAdm){
 
-            $this->id = $id;
-            $this->nom = $nom;
-            $this->passw = $passw;
-            $this->numTel = $numTel;
+            $this->idAdmin = $id;
+            $this->NmAdmin = $nom;
+            $this->MdpAdm = $MdpAdm;
+            $this->emailAdm = $emailAdm;
             
         }
 
-        public function getid(){return $this->id;}
-        public function setid($id){ $this->id =$id;}
+        public function getid(){return $this->idAdmin;}
+        public function setid($id){ $this->idAdmin =$id;}
 
-        public function getnom(){return $this->nom;}
-        public function setnom($nom){ $this->nom =$nom;}
+        public function getnom(){return $this->NmAdmin;}
+        public function setnom($nom){ $this->NmAdmin =$nom;}
 
-        public function getpassw(){return $this->passw;}
-        public function setpassw($passw){ $this->passw =$passw;}
+        public function getpassw(){return $this->MdpAdm;}
+        public function setpassw($MdpAdm){ $this->MdpAdm =$MdpAdm;}
 
-        public function getnum(){return $this->numTel;}
-        public function setnum($numTel){ $this->numTel =$numTel;}
+        public function getemail(){return $this->emailAdm;}
+        public function setemail($email){ $this->emailAdm =$email;}
 
-        public function getvalid(){ return $this->valid;}
-        public function setvalid($valid){ $this->valid = $valid;}
+        public function getvalid(){ return $this->validAdm;}
+        public function setvalid($valid){ $this->validAdm = $valid;}
     }
