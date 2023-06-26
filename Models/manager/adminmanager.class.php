@@ -18,13 +18,13 @@
         }
 
         public function chargeAdmin(){
-            $req = $this->getbdd()->prepare("SELECT * FROM administrateur");
+            $req = $this->getbdd()->prepare("SELECT * FROM admins");
             $req->execute();
             $LesAdmins = $req->fetchAll(PDO::FETCH_ASSOC);
             $req->closeCursor();
 
             foreach ($LesAdmins as $admin) {
-                $Ad = new Admin($admin['idAdmin'],$admin['NmAdmin'],$admin['MdpAdm'],$admin['numTel']);
+                $Ad = new Admin($admin['idAdmin'],$admin['NmAdmin'],$admin['validAdm'],$admin['MdpAdm'],$admin['emailAdm']);
                 $this->ajoutAdmin($Ad);
             }
 

@@ -1,31 +1,31 @@
 <?php 
 
 require_once "Model.class.php";
-require_once "Expert.class.php";
+require_once "Client.class.php";
 
-class ExpertManager extends Model{
+class CltManager extends Model{
 
-    private $Experts;
+    private $Clients;
 
-    public function ajoutExp($expert){
+    public function ajoutExp($Client){
 
-        $this ->Experts[] = $expert;
+        $this ->Clients[] = $Client;
     }
 
-    public function getExp(){
+    public function getClt(){
 
-        return $this->Experts;
+        return $this->Clients;
     }
 
-    public function chargeExp(){
-        $req = $this->getbdd()->prepare("SELECT * FROM experts");
+    public function chargeClt(){
+        $req = $this->getbdd()->prepare("SELECT * FROM clients");
         $req->execute();
-        $LesExperts = $req->fetchAll(PDO::FETCH_ASSOC);
+        $Lesclients = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();
 
-        foreach ($LesExperts as $expert) {
-            $Exp = new Expert($expert['idExp'],$expert['nomPro'],$expert['AdresExp'],$expert['bioPro'],$expert['numPro'],$expert['cotPro'],$expert['typeEntite'],$expert['AdminResp'],$expert['MdpPro']);
-            $this->ajoutExp($Exp);
+        foreach ($Lesclients as $Client) {
+            $Clt = new Client($Client['idClt'],$Client['BioClt'],$Client['NmClt'],$Client['AdClt'],$Client['NumClt'],$Client['validClt'],$Client['VAClt'],$Client['email'],$Client['MdpClt']);
+            $this->ajoutExp($Clt);
         }
 
     }

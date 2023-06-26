@@ -2,53 +2,58 @@
 
 class Client{
 
-    private $id;
-    private $nomClt;
+    private $idClt;
+    private $NmClt;
+    private $BioClt;
     private $email;
-    private $adresseClt;
-    private $numClt;
-    private $passwClt;
-    private $abnClt;
+    private $AdClt;
+    private $NumClt;
+    private $MdpClt;
+    private $VAClt;
     private $imageClt;
-    private $valid;
+    private $validClt;
 
-    public function __construct($id,$nomClt,$email,$adresseClt,$numClt,$passwClt,$abnClt,$imageClt){
-        $this->id = $id;
-        $this->nomClt = $nomClt;
+    public function __construct($id,$BioClt,$NmClt,$email,$AdClt,$NumClt,$MdpClt,$VAClt,$imageClt){
+        $this->idClt = $id;
+        $this->BioClt = $BioClt;
+        $this->NmClt = $NmClt;
         $this->email = $email;
-        $this->adresseClt = $adresseClt;
-        $this->numClt = $numClt;
-        $this->passwClt = $passwClt;
-        $this->abnClt = $abnClt;
+        $this->AdClt = $AdClt;
+        $this->NumClt = $NumClt;
+        $this->MdpClt = $MdpClt;
+        $this->VAClt = $VAClt;
         $this->imageClt = $imageClt;
     }
 
-    public function getid(){ return $this->id;}
-    public function setid($id){ $this->id = $id;}
+    public function getid(){ return $this->idClt;}
+    public function setid($id){ $this->idClt = $id;}
 
-    public function getnom(){ return $this->nomClt;}
-    public function setnom($nom){ $this->nomClt = $nom;}
+    public function getBio(){ return $this->BioClt;}
+    public function setBioi($Bio){ $this->BioClt = $Bio;}
+
+    public function getnom(){ return $this->NmClt;}
+    public function setnom($nom){ $this->NmClt = $nom;}
 
     public function getemail(){ return $this->email;}
     public function setemail($email){ $this->email = $email;}
 
-    public function getadresse(){ return $this->adresseClt;}
-    public function setadresse($adresse){ $this->adresseClt = $adresse;}
+    public function getadresse(){ return $this->AdClt;}
+    public function setadresse($adresse){ $this->AdClt = $adresse;}
 
-    public function getpass(){ return $this->passwClt;}
-    public function setpass($pass){ $this->passwClt = $pass;}
+    public function getpass(){ return $this->MdpClt;}
+    public function setpass($pass){ $this->MdpClt = $pass;}
 
-    public function getabn(){ return $this->abnClt;}
-    public function setabn($abn){ $this->abnClt = $abn;}
+    public function getabn(){ return $this->VAClt;}
+    public function setabn($abn){ $this->VAClt = $abn;}
 
     public function getimg(){ return $this->imageClt;}
     public function setimg($img){ $this->imageClt = $img;}
 
-    public function getnum(){ return $this->numClt;}
-    public function setnum($num){ $this->numClt = $num;}
+    public function getnum(){ return $this->NumClt;}
+    public function setnum($num){ $this->NumClt = $num;}
 
-    public function getvalid(){ return $this->valid;}
-    public function setvalid($valid){ $this->valid = $valid;}
+    public function getvalid(){ return $this->validClt;}
+    public function setvalid($valid){ $this->validClt = $valid;}
 
 }
 

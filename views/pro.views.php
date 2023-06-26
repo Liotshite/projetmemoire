@@ -24,7 +24,7 @@
 
               <div class="col-lg-4" bis_skin_checked="1">
                 <img class="rounded-circle" src="" alt="" width="140" height="140">
-                <h2>Experts</h2>
+                <h2>Pros</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div><!-- /.col-lg-4 -->
 
